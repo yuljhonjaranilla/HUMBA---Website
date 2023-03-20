@@ -3,6 +3,13 @@
     src: url('AstoriaMedium.ttf') format('truetype');
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -357,3 +364,81 @@ p.subtagline{
     
     color: #656C73;
 }
+
+
+
+.footer-container{
+    background-color: #252525;
+    padding-bottom: 4rem 0 4rem 0;
+    flex-shrink: 0;
+}
+
+.footer{
+    width: 80%;
+    height: 40vh;
+    background-color: #252525;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+
+.footer-heading a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover{
+    color: white;
+    transition: 0.3s ease-out;
+    background-color: #DC780B;
+}
+
+.footer-email h2{
+    margin-bottom: 2rem;
+}
+
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+    color: #656C73;
+}
+
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #DC780B;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: #6FA12B;
+    transition: all 0.4s ease-out;
+}
+

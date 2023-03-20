@@ -6,23 +6,25 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
     <header>
-        <ul>
-            <li><img src="ChadaCucina.png" id="logo"></li>
-            <li><a href = "home.html" id="home"> Home </a></li>
-            <li><a href = "about.html" id="about"> About </a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Category</a>
-                <div class="dropdown-content">
-                    <a href="#" class="section"> Meal </a>
-                    <a href="#" class="section"> Desserts </a>
-                    <a href="#" class="section"> Drinks </a>
-                </div>
-            </li>
-            <li><a href = "contact.html" id="contact"> Contact </a></li>
-            <button class="book"> Book Now </button></li>
-        </ul>
+        <img src="ChadaCucina.png" id="logo">
+        <nav>
+            <ul clas="nav-links">
+                <li><a href = "home.html" id="home"> Home </a></li>
+                <li><a href = "about.html" id="about"> About </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Category</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="section"> Meal </a>
+                        <a href="#" class="section"> Desserts </a>
+                        <a href="#" class="section"> Drinks </a>
+                    </div>
+                </li>
+                <li><a href = "contact.html" id="contact"> Contact </a></li>
+                <button class="book"> Book Now </button></li>
+            </ul>
+        </nav>
+
     </header>
 
     <h1 class="tagline">
@@ -68,6 +70,37 @@
 
     </div>
 
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2> About Us </h2>
+                <a href="#"> Blog </a>
+                <a href="#"> Demo </a>
+                <a href="#"> Cusotmers </a>
+                <a href="#"> Investors </a>
+                <a href="#"> Terms of Service </a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2> Contact Us </h2>
+                <a href="#"> Jobs </a>
+                <a href="#"> Support </a>
+                <a href="#"> Contacts </a>
+                <a href="#"> Sponsorships </a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2> Social Media </h2>
+                <a href="#"> Facebook </a>
+                <a href="#"> Instagram </a>
+                <a href="#"> Twitter </a>
+                <a href="#"> YouTube </a>
+            </div>
+            <div class="email-form">
+                <h2> Join our newsletter </h2>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value ="Sign Up" id="footer-email-btn">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
