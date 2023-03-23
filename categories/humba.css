@@ -1,0 +1,269 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'AstoriaMedium';
+  src: url('AstoriaMedium.ttf') format('truetype');
+}
+
+div.content{
+  height: 2600px;
+  width: 1299px;
+  margin-left: 110px;
+  margin-top: 20px;
+  margin-bottom: -400px;
+}
+
+li, a, button{
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 16px;
+  color: #656C73;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+#logo{
+  cursor: pointer;
+  width: 83px;
+  height: 56px;
+  margin-right: auto;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover{
+  color: #DC780B;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  background-color: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: #656C73;
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}  
+
+button.nav-book{
+  padding: 9px 25px;
+  background-color: #6FA12B;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  color: white;
+}
+
+button:hover{
+  padding: 9px 25px;
+  background-color: #70a12bbe;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button.order{
+  position: absolute;
+  width: 199.62px;
+  height: 53.34px;
+  left: 130px;
+  top: 500px;
+  padding: 9px 25px;
+  background-color: white;
+  border: 1px solid #6FA12B;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  color: #6FA12B;
+  font-size: 22px;
+}
+
+button.details{
+  position: absolute;
+  width: 199.62px;
+  height: 53.34px;
+  left: 365.04px;
+  top: 500px;
+  padding: 9px 25px;
+  background-color: white;
+  border: 1px solid #6FA12B;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  color: #6FA12B;
+  font-size: 22px;
+}
+
+button.order:hover, button.details:hover{
+  background-color: #6FA12B;
+  color: white;
+  border: none;
+}
+/* Main styles */
+
+.main {
+  max-width: 1440px;
+  margin: 5% auto;
+  font-family: "Helvetica";
+}
+
+.recipe-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 5%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-container img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.recipe-content {
+  margin: 2%;
+  flex: 1;
+}
+
+.recipe-content h2 {
+  font-family: "AstoriaMedium";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 16px 0px 10px 0px;
+
+  display: flex;
+  align-items: center;
+
+  color: #dc780b;
+}
+
+.recipe-content p {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: justify;
+
+  color: #656c73;
+}
+
+.recipe-content h3 {
+  font-family: "AstoriaMedium";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 25px;
+  margin: 16px 0px 10px 0px;
+
+  display: flex;
+
+  color: #dc780b;
+}
+
+.recipe-content ul,
+.recipe-content ol {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+.recipe-content li {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+
+  text-align: justify;
+
+  color: #656c73;
+}
+
+.recipe-content ol {
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+
+.recipe-content ol {
+  margin-left: 2em;
+}
+
+.recipe-content ol li {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+.recipe-content ul{
+  margin-left: 2em;
+}
+
+.recipe-content ul li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+
+

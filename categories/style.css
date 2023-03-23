@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'AstoriaMedium';
+  src: url('AstoriaMedium.ttf') format('truetype');
+}
+
+div.content{
+  height: 2600px;
+  width: 1299px;
+  margin-left: 110px;
+  margin-top: 20px;
+  margin-bottom: -400px;
+}
+
+li, a, button{
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 16px;
+  color: #656C73;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+#logo{
+  cursor: pointer;
+  width: 83px;
+  height: 56px;
+  margin-right: auto;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover{
+  color: #DC780B;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  background-color: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: #656C73;
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}  
+
+button.nav-book{
+  padding: 9px 25px;
+  background-color: #6FA12B;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  color: white;
+}
+
+button:hover{
+  padding: 9px 25px;
+  background-color: #70a12bbe;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button.order{
+  position: absolute;
+  width: 199.62px;
+  height: 53.34px;
+  left: 130px;
+  top: 500px;
+  padding: 9px 25px;
+  background-color: white;
+  border: 1px solid #6FA12B;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  color: #6FA12B;
+  font-size: 22px;
+}
+
+button.details{
+  position: absolute;
+  width: 199.62px;
+  height: 53.34px;
+  left: 365.04px;
+  top: 500px;
+  padding: 9px 25px;
+  background-color: white;
+  border: 1px solid #6FA12B;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  color: #6FA12B;
+  font-size: 22px;
+}
+
+button.order:hover, button.details:hover{
+  background-color: #6FA12B;
+  color: white;
+  border: none;
+}
+
+/* Main styles */
+
+.top_title {
+  max-width: 1440px;
+  margin-top: 10%;
+  margin-bottom: -3%;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 91.7%;
+
+  align-items: center;
+  text-align: center;
+
+  color: #dc780b;
+}
+
+.mid_title {
+  max-width: 1440px;
+  margin-bottom: -1%;
+  font-family: "AstoriaMedium";
+  font-size: 40px;
+  line-height: 79px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #656c73;
+}
+
+.sub_title {
+  max-width: 1440px;
+  margin-bottom: 8%;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+
+  align-items: center;
+  text-align: center;
+
+  color: #656c73;
+}
+
+.sub_title p {
+  margin-bottom: -15px;
+}
+
+.main {
+  max-width: 1440px;
+  margin: 5% auto;
+  font-family: "Helvetica";
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  position: relative;
+  max-height: 213px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 28%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 35px 0px 18px 18px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  position: relative;
+  padding: 12px 12px 32px 24px;
+  margin: 8px 8px 8px 8px;
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.card_content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card_content::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.card_content::-webkit-scrollbar-thumb {
+  background: #c89b3f;
+  border-radius: 15px;
+}
+
+.card_title {
+  font-family: "AstoriaMedium";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 16px 0px 10px 0px;
+
+  display: flex;
+  align-items: center;
+
+  color: #dc780b;
+}
+
+hr {
+  margin: 24px auto;
+  width: 50px;
+  border-top: 2px solid #c89b3f;
+}
+
+.card_text p {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: justify;
+
+  color: #656c73;
+}
+
+.card_text p:last-child {
+  margin: 0;
+}
+
+.button img {
+  margin: 32px 0px -10px 0px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.star {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  left: 190px;
+  top: 165px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
