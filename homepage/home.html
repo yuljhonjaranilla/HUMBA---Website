@@ -1,9 +1,10 @@
 <html>
 <head>
     <title> Chada Cucina </title>
-    <link href="https://fonts.googleapis.com/css?family=Helvetica&display=swap" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Helvetica&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="C:\Users\yuljh\Downloads\Chada Cucina\homepage\icons\ChadaCucina.png">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
@@ -115,23 +116,50 @@
     <div class="left-sidebar">
     </div>
 
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-heading footer-1">
-                <h2> About Us </h2>
-                <a href="#"> Blog </a>
-                <a href="#"> Demo </a>
-                <a href="#"> Cusotmers </a>
-                <a href="#"> Investors </a>
-                <a href="#"> Terms of Service </a>
-            </div>
-            <div class="email-form">
-                <h2> Join our newsletter </h2>
-                <input type="email" placeholder="Enter your email address" id="footer-email">
-                <input type="submit" value ="Sign Up" id="footer-email-btn">
-            </div>
-        </div>
+    <div class="newsletter">
+        <p class="subtitle-newsletter"> NEWSLETTER </p>
+            <p class="subtitle-nltagline"> Stay in touch with the latest food trends and updates </p>
+        <form>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
     </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <img src="C:\Users\yuljh\Downloads\Chada Cucina\homepage\icons\ChadaCucina.png" id="logo-footer">
+            <ul class="ul-links-1">
+              <li class="li-footer"><a class="footer-a" href="#">www.chadacucina.ph</a></li>
+              <li class="li-footer"><a class="footer-a" href="#">chadacucina@gmail.com</a></li>
+              <li class="li-footer"><a class="footer-a" href="#">+63 9123 456 7890</a></li>
+              <br/>
+              <li> Copyright © 2023. All rights reserved.</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="title-about">About Us</h3>
+            <p class="footer-about"> Chada Cucina is a food blog and shopping site that specializes in Filipino cuisine. The site was founded in 2022 by two student Filipino food enthusiasts who wanted to share their love for the rich and diverse flavors of Filipino cooking with the world.</p>
+          </div>
+          <div class="footer-column">
+            <h3 class="title-about">Links</h3>
+            <ul class="ul-links">
+              <li class="li-footer"><a class="footer-a" href="#">Home</a></li>
+              <li class="li-footer"><a class="footer-a" href="#">About Us</a></li>
+              <li class="li-footer"><a class="footer-a" href="#">Category</a></li>
+              <li class="li-footer"><a class="footer-a" href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="footer-icons">
+                <a class="social"><img src="C:\Users\yuljh\Downloads\Chada Cucina\homepage\footer\facebook.png"></a>
+                <a class="social"><img src="C:\Users\yuljh\Downloads\Chada Cucina\homepage\footer\instagram.png"></a>
+                <a class="social"><img src="C:\Users\yuljh\Downloads\Chada Cucina\homepage\footer\twitter.png"></a>
+                <a class="social"><img src="C:\Users\yuljh\Downloads\Chada Cucina\homepage\footer\linkedin.png"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
 </body>
 
 </html>
