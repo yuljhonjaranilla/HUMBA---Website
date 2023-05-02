@@ -26,7 +26,7 @@
 }
 
 div.content{
-    height: 2500px;
+    height: 1700px;
     width: 1299px;
     margin-left: 8.46%;
     margin-top: 1.54%; 
@@ -227,26 +227,31 @@ button.order:hover, button.details:hover{
     justify-content: center;
 }
 
-.subtitle{
+.subtitle {
     position: absolute;
     top: 114%;
+    left: 0;
+    right: 0;
+    margin: auto;
     font-family: 'Helvetica';
     font-weight: 400;
     font-size: 16px;
     text-align: center;
     color: #DC780B;
-}
-
-.subtitle-tagline{
+  }
+  
+  .subtitle-tagline {
     position: absolute;
     top: 118%;
+    left: 0;
+    right: 0;
+    margin: auto;
     font-family: 'AstoriaMedium';
     font-weight: 400;
     font-size: 35px;
     text-align: center;
     color: #656C73;
-}
-
+  }
 .ingredients {
     display: flex;
     justify-content: center;
@@ -311,8 +316,9 @@ button.order:hover, button.details:hover{
 
 .title-deliver{
     position: absolute;
-    width: 280px;
-    left: 620px;
+    left: 0;
+    right: 0;
+    margin: auto;
     top: 1100px;
     font-family: 'AstoriaMedium';
     font-weight: 400;
@@ -710,4 +716,128 @@ h3 {
 
 .footer-icons{
     margin-top: 6%;
+}
+
+@media only screen and (max-width: 600px) {
+    /* adjust font sizes */
+    .tagline {
+        width: auto;
+        font-size: 50px;
+        line-height: 60px;
+        top: 70%;
+        text-align: center;
+    }
+    .tagline-description{
+        font-size: 16px;
+        top: 90%;
+        line-height: 150%;
+        width: auto;
+        text-align: center;
+        padding-right: 6%;
+    }
+    .pan{
+        width: 415px;
+        height: 358px;
+        left: 10%;
+        width: auto;
+        top: 15%;
+    }
+    button.order{
+        top: 118%;
+    }
+    button.details{
+        left: 50%;
+        top: 118%;
+    }
+    .subtitle {
+        top: 140%;
+        font-size: 14px;
+        margin: auto; 
+    }
+    
+    .subtitle-tagline {
+        top: 145%;
+        font-size: 28px; 
+    }
+    .pic-ingredients{
+        width: 117px;
+        height: 117px;
+        margin-left: 23%;
+        top: 160%;
+    }
+    
+    .title-ingredient{
+        margin: auto;
+        width: 360px;
+        top: 175%;
+        font-size: 25px;
+        line-height: 79px;
+    }
+    
+    .description-ingredient{
+        margin: auto;
+        margin-left: 3%;
+        width: 360px;
+        top: 185%;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .pic-deliver{
+        margin: auto;
+        width: 117px;
+        height: 117px;
+        top: 200%;
+    }
+    
+    .title-deliver{
+        margin: auto;
+        width: 425px;
+        top: 215%;
+        font-size: 25px;
+        line-height: 79px;
+    }
+    
+    .description-deliver{
+        width: 390px;
+        margin-left: -119%;
+        top: 223%;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .pic-rate {
+        margin: auto;
+        top: 242%;
+        margin-left: -37%;
+
+    }
+    
+    .title-rate{
+        margin: auto;
+        margin-left: -223%;
+        width: 425px;
+        top: 260%;
+        font-size: 25px;
+        line-height: px;
+    }
+    
+    .description-rate{
+        width: 390px;
+        margin-left: -210%;
+        top: 270%;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .about-chadacucina{
+        margin-top: 500%;
+    }
+    .newsletter form{
+        width: 300px;
+    }
+    button[type="submit"] {
+        margin-top: 5%;
+        height: 40px;
+    }
+    .newsletter{
+        height: 380px;
+    }
 }
